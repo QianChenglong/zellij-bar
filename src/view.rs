@@ -3,6 +3,10 @@ use unicode_width::UnicodeWidthStr;
 use zellij_tile::prelude::*;
 use zellij_tile_utils::style;
 
+use crate::{
+    color
+};
+
 pub struct View {
     pub blocks: Vec<Block>,
     pub len: usize,
@@ -20,7 +24,7 @@ pub struct Bg;
 impl Bg {
     pub fn render(cols: usize, palette: Palette) -> Block {
         let text = format!("{: <1$}", "", cols);
-        let body = style!(palette.fg, palette.bg).paint(text);
+        let body = style!(palette.fg, color::DARKER_GRAY).paint(text);
 
         Block {
             body: body.to_string(),

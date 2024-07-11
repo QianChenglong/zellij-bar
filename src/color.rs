@@ -1,7 +1,7 @@
 use zellij_tile::prelude::{InputMode, Palette, PaletteColor, ThemeHue};
 
-pub const LIGHTER_GRAY: PaletteColor = PaletteColor::Rgb((62, 68, 82));
-pub const DARKER_GRAY: PaletteColor = PaletteColor::Rgb((44, 50, 60));
+pub const LIGHTER_GRAY: PaletteColor = PaletteColor::Rgb((31, 35, 41));
+pub const DARKER_GRAY: PaletteColor = PaletteColor::Rgb((28, 28, 28));
 
 pub struct ModeColor {
     pub fg: PaletteColor,

@@ -108,9 +108,9 @@ impl ZellijPlugin for State {
     }
 
     fn render(&mut self, _rows: usize, cols: usize) {
-        if self.tabs.is_empty() {
-            return;
-        }
+        // if self.tabs.is_empty() {
+        //     return;
+        // }
 
         let session_name = &self.mode_info.session_name;
         let mode = self.mode_info.mode;
